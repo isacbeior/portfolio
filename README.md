@@ -1,0 +1,1 @@
+No artwork in this repository may be redistributed, transmitted or copied without the express written permission of this repository's owner.
