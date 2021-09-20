@@ -6,4 +6,4 @@ This repository includes a part of my work as an watercolor and 3d modeler artis
 ### license
 No artwork in this repository may be redistributed, transmitted or copied without the express written permission of this repository's owner.
 ### screenshot
-![screenshot](https://isacbeior.github.io/portfolio/assets/images/thumbnail.png "screenshot")
+![screenshot](https://isacbeior.github.io/portfolio/assets/images/thumbnail.png)
