@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="..\assets\styles\contato-style.css" />
+
+    <link rel="shortcut icon" href="..\assets\images\favicon.png" />
+    <title>𝙸𝚜𝚊𝚌 𝙱𝚎𝚒𝚘𝚛 | 𝙸𝚕𝚞𝚜𝚝𝚛𝚊𝚍𝚘𝚛</title>
+
+    <meta property="og:title" content="Isac Beior Ilustrador" />
+    <meta name="keywords" content="ilustração, aquarela, animação, modelagem 3d, portfolio" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta property="og:url" content="https://isacbeior.github.io/portfolio/" />
+    <meta property="og:description" content="amo desenhar estrelas, mas só sei encontrar Betelgeuse no céu" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://isacbeior.github.io/portfolio/thumbnail.png" />
+    <meta name="author" content="Isac Ribeiro" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="isacbeior.github.io" />
+    <meta property="twitter:url" content="https://isacbeior.github.io/portfolio/" />
+    <meta name="twitter:title" content="Isac Beior Ilustrador" />
+    <meta name="twitter:description" content="amo desenhar estrelas, mas só sei encontrar Betelgeuse no céu" />
+    <meta name="twitter:image" content="https://isacbeior.github.io/portfolio/thumbnail.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Open+Sans&display=swap" rel="stylesheet" />
+
+    <script src="..\assets\scripts\right-click.js"></script>
+  </head>
+
+  <body>
+    <img alt="thumbnail" id="thumbnail" src="..\assets\images\thumbnail.png" />
+
+    <!-- header -->
+    <header id="head">
+      <div id="background-container"><div id="img-background"></div></div>
+      <script src="..\assets\scripts\background-fadeIn.js"></script>
+
+      <!-- navigation bar -->
+      <nav>
+        <!-- back button -->
+        <button title="voltar" onclick="goBack()" id="back">
+          <img alt="ícone voltar" class="nav-icon" src="..\assets\images\icons\arrow-back.svg">
+        </button>
+        <script>
+          function goBack() {
+            window.history.back();
+          }
+        </script>
+        <!-- logo -->
+        <img alt="nome" id="nome" src="..\assets\images\nome.svg">
+        <!-- dropdown menu -->
+        <div class="dropdown">
+          <button title="menu" id="menu" class="dropbtn">
+            <img alt="ícone menu" class="nav-icon" src="..\assets\images\icons\menu.svg">
+          </button>
+            <div class="dropdown-content">
+              <a href="..\index.html">portfólio</a><br>
+              <a href="sobre.html">sobre</a><br>
+              <a href="contato.html">contato</a><br>
+              <a title="página do instagram" target="_blank" href="https://www.instagram.com/ocasodaaurora/">
+                <img alt="ícone instagram" id="instagram" src="..\assets\images\icons\instagram.svg"/>
+              </a>
+            </div>
+        </div>
+      </nav>
+
+    </header>
+
+    <section id="contato">
+      <h1>contato</h1>
+      <p>qualquer coisa, manda um email ou uma mensagem!</p>
+
+      <div class="grid-container">
+      <div class="grid-item item-1">
+        <iframe title="formulário" src="https://docs.google.com/forms/d/e/1FAIpQLSdQygslfxKCenrSjKUWSwugi2AuoYji3WX6bmbmjVgWIhsN9Q/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" scrolling="yes">Carregando…</iframe>
+        <br>
+      </div>
+
+        <a class="grid-item deslizar-base item-2" title="contato WhatsApp" target="_blank" href="https://api.whatsapp.com/send?phone=5551984607058">
+          <img class="nav-icon" alt="whatsapp icon" src="..\assets\images\icons\whatsapp.svg"><br><br>
+        </a>
+
+        <a class="grid-item deslizar-base item-3" onclick="Function()" href = "mailto: isacbeior@gmail.com" title="copiar email">
+          <img class="nav-icon" alt="ícone de email" src="..\assets\images\icons\email.svg"><br>
+          <img alt="ícone copiar" class="copy" src="..\assets\images\icons\copy.svg">
+        </a>
+      </div>
+
+
+      <input type="text" title="email" id="input" value="isacbeior@gmail.com" alt="email" placeholder="&nbsp">
+      <script src="..\assets\scripts\email.js"></script>
+      <script src="..\assets\scripts\fadeIn-grid.js"></script>
+      <script src="..\assets\scripts\fadeIn-legenda.js"></script>
+
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+      <div id="autor">
+        <h6>
+          Isac Ribeiro, 2021.
+        </h6>
+      </div>
+    </footer>
+
+  </body>
+</html>

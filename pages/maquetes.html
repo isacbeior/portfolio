@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="..\assets\styles\maquetes-style.css" />
+
+    <link rel="shortcut icon" href="..\assets\images\favicon.png" />
+    <title>𝙸𝚜𝚊𝚌 𝙱𝚎𝚒𝚘𝚛 | 𝙸𝚕𝚞𝚜𝚝𝚛𝚊𝚍𝚘𝚛</title>
+
+    <meta property="og:title" content="Isac Beior Ilustrador" />
+    <meta name="keywords" content="ilustração, aquarela, animação, modelagem 3d, portfolio" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta property="og:url" content="https://isacbeior.github.io/portfolio/" />
+    <meta property="og:description" content="amo desenhar estrelas, mas só sei encontrar Betelgeuse no céu" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://isacbeior.github.io/portfolio/thumbnail.png" />
+    <meta name="author" content="Isac Ribeiro" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="isacbeior.github.io" />
+    <meta property="twitter:url" content="https://isacbeior.github.io/portfolio/" />
+    <meta name="twitter:title" content="Isac Beior Ilustrador" />
+    <meta name="twitter:description" content="amo desenhar estrelas, mas só sei encontrar Betelgeuse no céu" />
+    <meta name="twitter:image" content="https://isacbeior.github.io/portfolio/thumbnail.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Open+Sans&display=swap" rel="stylesheet" />
+
+    <script src="..\assets\scripts\right-click.js"></script>
+  </head>
+
+  <body>
+    <img alt="thumbnail" id="thumbnail" src="..\assets\images\thumbnail.png" />
+
+    <!-- header -->
+    <header id="head">
+      <div id="background-container"><div id="img-background"></div></div>
+      <script src="..\assets\scripts\background-fadeIn.js"></script>
+
+      <!-- navigation bar -->
+      <nav>
+        <!-- back button -->
+        <button title="voltar" onclick="goBack()" id="back">
+          <img alt="ícone voltar" class="nav-icon" src="..\assets\images\icons\arrow-back.svg">
+        </button>
+        <script>
+          function goBack() {
+            window.history.back();
+          }
+        </script>
+        <!-- logo -->
+        <img alt="nome" id="nome" src="..\assets\images\nome.svg">
+        <!-- dropdown menu -->
+        <div class="dropdown">
+          <button title="menu" id="menu" class="dropbtn">
+            <img alt="ícone menu" class="nav-icon" src="..\assets\images\icons\menu.svg">
+          </button>
+            <div class="dropdown-content">
+              <a href="..\index.html">portfólio</a><br>
+              <a href="sobre.html">sobre</a><br>
+              <a href="contato.html">contato</a><br>
+              <a title="página do instagram" target="_blank" href="https://www.instagram.com/ocasodaaurora/">
+                <img alt="ícone instagram" id="instagram" src="..\assets\images\icons\instagram.svg"/>
+              </a>
+            </div>
+        </div>
+      </nav>
+
+    </header>
+
+    <!-- section -->
+    <section>
+      <h1>maquetes</h1><br><br><br><br>
+      <a href="#1">
+        <div class="grid-item js-scroll fadeOut">
+          <img class="nav-icon" alt="ícone seta para baixo" src="..\assets\images\icons\arrow-downwards.svg">
+        </div>
+      </a>
+
+      <!-- grid -->
+      <div class="grid-container" id="1">
+
+        <!-- grid items -->
+        <div class="grid-item js-scroll item-1">
+          <img alt="ala norte" src="..\assets\images\models\north-wing.png">
+        </div>
+        <div class="grid-item deslizar-base item-2">
+          <h2>ala norte | castelo Aurora<br></h2>
+          <p>aquerela e lápis aquarelável sobre papel</p>
+        </div>
+
+        <div class="grid-item js-scroll item-3">
+          <img alt="ala leste" src="..\assets\images\models\east-wing.png">
+        </div>
+        <div class="grid-item deslizar-base item-4">
+          <h2>ala leste<br></h2>
+          <p>aquerela e lápis aquarelável sobre papel</p>
+        </div>
+
+        <div class="grid-item stars-gradient"><img alt="gradiante de estrelas" src="..\assets\images\headers\gradient.png"></div>
+        <div class="grid-item js-scroll black-background"></div>
+        <div class="grid-item js-scroll item-5">
+          <img alt="ala sul" src="..\assets\images\models\lights.png">
+        </div>
+        <div class="grid-item js-scroll item-6">
+          <img alt="sombras" src="..\assets\images\models\shadows.png">
+        </div>
+        <div class="grid-item deslizar-base item-7">
+          <h2>ala sul<br></h2>
+          <p>aquerela e lápis aquarelável sobre papel</p>
+        </div>
+        <div class="grid-item deslizar-base item-8">
+          <h2>sombras<br></h2>
+          <p>aquerela e lápis aquarelável sobre papel</p>
+        </div>
+        <div class="grid-item js-scroll item-9">
+          <img alt="ala oeste" src="..\assets\images\models\weast-wing.png">
+        </div>
+        <div class="grid-item deslizar-base item-10">
+          <h2>ala oeste<br></h2>
+          <p>aquerela e lápis aquarelável sobre papel</p>
+        </div>
+
+        <script src="..\assets\scripts\fadeIn-grid.js"></script>
+        <script src="..\assets\scripts\fadeIn-legenda.js"></script>
+      </div>
+
+      <!-- top button -->
+      <button onclick="topFunction()" id="top-btn" title="voltar para o topo">
+        <p>voltar para o topo&nbsp;<img id="up" alt="ícone seta para cima" src="..\assets\images\icons\arrow-upward.svg"></p>
+        <script src="..\assets\scripts\top-function.js"></script>
+      </button>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div id="box"></div>
+      <div id="autor">
+        <h6>
+          ilustrações, músicas e animações autorais<br>
+          Isac Ribeiro, 2021.
+        </h6>
+      </div>
+    </footer>
+
+  </body>
+</html>
