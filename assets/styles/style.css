@@ -25,6 +25,16 @@ body {
   border-radius: 15px;
 }
 
+::-moz-selection {
+  color: black;
+  background: #ffd2d1;
+}
+
+::selection {
+  color: black;
+  background: #ffd2d1;
+}
+
 input {
   opacity: 0;
   position: absolute;
@@ -46,6 +56,7 @@ a {
   text-decoration: none;
   vertical-align: middle;
   transition: 0.1s linear;
+  -webkit-tap-highlight-color: #ffd2d150;
 }
 a:hover {
   color: #606060;
