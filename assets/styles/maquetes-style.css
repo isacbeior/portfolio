@@ -218,7 +218,7 @@ header, #background-container{
   overflow: hidden;
 }
 #img-background {
-  background-image: url("../images/models/east-wing.png");
+  background-image: url("../images/models/east-wing.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 35%;

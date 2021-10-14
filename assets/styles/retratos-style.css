@@ -218,7 +218,7 @@ header, #background-container{
   overflow: hidden;
 }
 #img-background {
-  background-image: url("../images/headers/flores-e-nuvens.png");
+  background-image: url("../images/headers/flores-e-nuvens.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 40% 0;

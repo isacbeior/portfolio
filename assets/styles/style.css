@@ -55,16 +55,15 @@ a {
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
-  transition: 0.1s linear;
+  transition: 0.2s linear;
   -webkit-tap-highlight-color: #ffd2d150;
 }
 a:hover {
-  color: #606060;
   cursor: pointer;
 }
 nav a:hover {
-  background-color: #ffd2d1;
-  border-radius: 3px;
+  background-color: #c3e7f0;
+  border-radius: 5px;
 }
 
 h1 {
@@ -143,6 +142,10 @@ button p {
     font-size: 5.7vw;
   }
 
+  nav a:hover {
+    background-color: #ffd2d1;
+  }
+
   p {
     font-size: 6vw;
   }
@@ -182,11 +185,12 @@ header, #background-container{
 	animation-fill-mode: forwards;
   background-attachment: fixed;
   background-image: url("../images/headers/tecido-horizontal.jpg");
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
   margin-top: 0;
-  transform: scale(2.5, 2);
+  transform: scale(-1.05, 1.05);
   width: 100%;
   z-index: 0;
 }
@@ -218,6 +222,13 @@ nav {
   margin: 0;
   max-width: 38%;
   z-index: 1;
+}
+
+#instagram {
+  align-items: center;
+  vertical-align: middle;
+  height: auto;
+  width: auto;
 }
 
 @media screen and (max-width: 1037px) {
