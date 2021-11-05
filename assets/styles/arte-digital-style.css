@@ -425,9 +425,10 @@ section img {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
+  margin-bottom: 10vh;
   margin-top: -3vw;
   padding-top: 6vw;
-  width: 45vw;
+  width: 55vw;
 }
 .item-2 {
   grid-column-start: 2;
@@ -435,19 +436,22 @@ section img {
   grid-row-start: 1;
   grid-row-end: 2;
   margin: auto;
-  width: 45vw;
+  margin-left: 10vw;
+  width: 35vw;
 }
 .item-3 {
   grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin: auto;
+  width: 45vw;
+}
+.item-4 {
+  grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
-}
-.item-4 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 4;
-  grid-row-end: 5;
   margin: auto;
   width: 45vw;
 }
@@ -462,36 +466,54 @@ section img {
   grid-column-end: 3;
   grid-row-start: 6;
   grid-row-end: 7;
-  margin-bottom: 15vh;
+  margin: auto;
+  width: 45vw;
 }
 .item-7 {
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 3;
   grid-row-start: 7;
   grid-row-end: 8;
   margin-bottom: 10vh;
-  width: 45vw;
 }
 .item-8 {
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 7;
   grid-row-end: 8;
   margin: auto;
+  width: 100%;
 }
 .item-9 {
   grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  margin: auto;
+  margin-top: 10vh;
+  width: 45vw;
+}
+.item-10 {
+  grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 8;
   grid-row-end: 9;
   margin: auto;
-  width: 45vw;
 }
-.item-10 {
+.item-11 {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 9;
   grid-row-end: 10;
+  margin: auto;
+  margin-top: 10vh;
+  width: 50vw;
+}
+.item-12 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 10;
+  grid-row-end: 11;
   margin: auto;
 }
 
@@ -586,13 +608,28 @@ section img {
     grid-row-end: 15;
     margin: auto;
     margin-top: 5vh;
-    width: 65vw;
+    width: 90vw;
   }
   .item-10 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 15;
     grid-row-end: 16;
+    margin: auto;
+  }
+  .item-11 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 16;
+    grid-row-end: 17;
+    margin: auto;
+    width: 80vw;
+  }
+  .item-12 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 17;
+    grid-row-end: 18;
     margin: auto;
   }
 }
