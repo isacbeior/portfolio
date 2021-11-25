@@ -1,5 +1,5 @@
 # ✨ isac beior's portfolio ✨
-I love to draw stars, but I only now how to find Betelgeuse in the sky.
+I love to draw stars, but I only know how to find Betelgeuse in the sky.
 
 ### overview
 This repository includes a part of my work as a watercolor and 3d modeler artist. It also holds my online portfolio code.
