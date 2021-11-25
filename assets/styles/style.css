@@ -47,10 +47,11 @@ input {
 /**fonts---------------------------------------------------------------------**/
 a {
   color: #101010;
-  font-family: "Courier Prime", monospace;
-  font-size: 2vw;
-  font-weight: 400;
-  margin: 0vw 2vw 0vw 2vw;
+  cursor: pointer !important;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.6em;
+  font-weight: 500;
+  margin: 0vw 1vw 0vw 1vw;
   padding: 0.5vw;
   text-align: center;
   text-decoration: none;
@@ -60,38 +61,60 @@ a {
 }
 a:hover {
   cursor: pointer;
+  color: #10101085;
+}
+nav a {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
 }
 nav a:hover {
   background-color: #c3e7f0;
   border-radius: 5px;
+  text-decoration: none;
 }
 
 h1 {
   color: #101010;
-  font-family: "Courier Prime", monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 5vw;
   font-weight: 100;
-  margin-bottom: 1.7vw;
+  margin-bottom: 1.3vw;
   margin-top: -4vw;
   padding-top: 6.3vw;
   text-decoration: none;
 }
 
-p {
-  color: inherit;
-  font-family: "Courier Prime", monospace;
-  font-size: 2vw;
-  font-weight: inherit;
+h2 {
+  color: #8B0000;
+  font-family: 'Marck Script', Courier;
+  font-size: 2.3vw;
+  font-weight: 400;
+  line-height: 3vh;
+  margin-bottom: 0;
+  margin-top: 2.5vw;
   text-align: inherit;
   text-decoration: none;
-  line-height: 1.3;
+}
+
+p {
+  color: inherit;
+  font-family: "Courier New", Courier, monospace;
+  font-size:0.9vw;
+  font-weight: 100;
+  margin-bottom: 1.3vw;
+  text-align: inherit;
+  text-decoration: none;
+}
+footer p {
+  font-size: 1.5vw;
+  font-weight: 600;
 }
 
 h6 {
   background-color: #f6f6f6;
   border-radius: 5px 5px 0 0;
   color: gray;
-  font-family: "Courier Prime", monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 1.2vw;
   font-weight: 1;
   margin-bottom: 0;
@@ -104,18 +127,25 @@ h6 {
 }
 
 button {
-  border: none;
   background-color: #ffffff00;
+  border: none;
+  cursor: pointer;
   margin: 0;
   padding:0;
   transition: 0.15s ease;
 }
 button:hover {
-  cursor: pointer;
   opacity: 0.5;
 }
 button p {
   margin:0;
+}
+
+hr {
+  background-color: black;
+  border-style: solid;
+  border-width:thin;
+  width: 70%;
 }
 
 @media screen and (max-width: 1037px) {
@@ -124,11 +154,17 @@ button p {
   }
 
   p {
+    font-size: 2vw;
+  }
+  footer p {
     font-size: 3vw;
   }
 
   h1 {
     font-size: 8vw;
+  }
+  h2 {
+    font-size: 4vw;
   }
   h6 {
     font-size: 2vw;
@@ -147,16 +183,21 @@ button p {
   }
 
   p {
-    font-size: 6vw;
+    font-size: 4vw;
   }
 
   h1 {
-    font-size: 9vw;
+    font-size: 10vw;
+  }
+
+  h2 {
+    font-size: 8vw;
   }
 
   .sobre p {
     font-size: 4.3vw;
   }
+
   h6 {
     font-size: 3vw;
     padding: 0.5vh, 0.5vh, 0.5vh, 0.05vh;
@@ -180,7 +221,7 @@ header, #background-container{
   overflow: hidden;
 }
 #img-background {
-  animation: fadeInAnimation ease 4s;
+  animation: fadeInAnimation ease 6s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
   background-attachment: fixed;
@@ -189,8 +230,9 @@ header, #background-container{
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
-  margin-top: 0;
-  transform: scale(-1.05, 1.05);
+  padding-left: 30vw;
+  padding-top: 180vh;
+  transform: scale(-0.7, 0.6);
   width: 100%;
   z-index: 0;
 }
@@ -199,54 +241,95 @@ header, #background-container{
 		opacity: 0;
 	}
 	100% {
-		opacity: 0.7;
+		opacity: 0.9;
 	}
 }
 
 /*navigation bar -------------*/
 nav {
-  margin-top: 3vh;
+  margin-top: 50vh;
+  margin-left: 42vw;
+  text-align: center;
 }
 .container {
-  align-items: center;
   margin-left: 5vw;
   margin-right: 5vw;
   margin-top: 4vh;
   position: absolute;
-  text-align: center;
   width: 90vw;
   z-index: 1;
 }
 
 #logo {
+  filter: brightness(110%);
   margin: 0;
-  max-width: 38%;
-  z-index: 1;
+  margin-top: -5vh;
+  margin-left: -2vw;
+  position: absolute;
+  width: 55%;
+  z-index: 5;
 }
 
-#instagram {
+#nome{
+  margin-top: 25vh;
+  right: 11vw;
+  width: 30%;
+  position: absolute;
+}
+
+#instagram, #twitter, #youtube {
   align-items: center;
   vertical-align: middle;
+  filter: grayscale(100%);
   height: auto;
-  width: auto;
+  width: 0.8em;
 }
 
 @media screen and (max-width: 1037px) {
+  #nome {
+    margin-top: 30vh;
+    right: 10vw;
+  }
   #logo {
-    min-width: 50vh;
+    margin-top: 15vh;
+    width: 50vw;
   }
   #img-background {
-    transform: scale(1.6, 1.7);
+    padding-left: 0vw;
+    padding-top: 350vh;
+    transform: scale(-0.9, 0.8);
   }
 }
 @media screen and (max-width: 600px) {
   #logo {
-    min-width: 95%;
-    margin-top: 12vh;
+    width: 95vw;
+    margin: 0;
+    margin-top: 00vh;
+  }
+  #nome{
+    margin: 15%;
+    margin-top: 50vh;
+    right: auto;
+    width: 70%;
+    position: absolute;
   }
   #img-background {
     background-image: url("../images/headers/tecido.jpg");
-    transform: scale(2, 1.5);
+    padding-top: 160vh;
+    transform: scale(-1.07, 0.8);
+  }
+  @keyframes fadeInAnimation {
+  	0% {
+  		opacity: 0;
+  	}
+  	100% {
+  		opacity: 0.5;
+  	}
+  }
+  nav {
+    margin-top: 65vh;
+    margin-left: 0vw;
+    text-align: center;
   }
 }
 /*end of header---------------------------------------------------------------*/
@@ -268,28 +351,45 @@ section {
 
 /*grid----------------------------------------------*/
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 20vw);
-  grid-column-gap: 5vw;
-  grid-row-gap: 5vh;
   margin-left: auto;
   margin-right: auto;
   margin-top: 6vw;
   padding-bottom: 5vh;
-  width: 70vw;
+  width: 81vw;
   z-index: 1;
 }
 
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.column {
+  -ms-flex: 25%;
+  flex: 25%;
+  margin: 0vw 0vw 0vw 2vw;
+  width: 25vw;
+}
+
 .grid-item {
+  border-color: #C8C8C8;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: thin;
   height: auto;
+  margin-bottom: 3vw;
+  padding: 0.45em;
   text-align: center;
   width: auto;
 }
 
 section img {
+  border-radius: 3px;
   margin: 0;
-  height: 20vw;
-  width: 20vw;
+  height: auto;
+  width: 23vw;
   transition: 0.3s ease;
 }
 section a:hover img{
@@ -301,35 +401,37 @@ section a {
 }
 
 @media screen and (max-width: 1032px) {
-  section img {
-    height: 32vw;
-    width: 32vw;
+  .column {
+    -ms-flex: 35vw;
+    flex: 35vw;
+    width: 35vw;
   }
 
-  .grid-container {
-    grid-template-columns: repeat(auto-fill, 32vw);
-    grid-column-gap: 4vw;
-    grid-row-gap: 5vw;
+  section img {
+    width: 34vw;
   }
 
   .grid-item {
     height: auto;
-    width: 32vw;
+    width: 35vw;
   }
 }
 
 @media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 80vw;
+    flex: 80vw;
+    margin: 0vw 0vw 0vw 0vw;
+    width: 80vw;
+  }
+
   section img {
-    height: 80vw;
     width: 80vw;
   }
 
   .grid-container {
-    grid-template-columns: repeat(auto-fill, 80vw);
-    grid-row-gap: 5vw;
-    grid-column-gap: 0;
     margin-top: 15vh;
-    width: 80%;
+    width: 85%;
   }
 
   .grid-item {
@@ -363,7 +465,7 @@ footer {
 /*sobre----------------------*/
 .square {
   min-height: 100vh;
-  opacity: 0;
+  opacity: 1;
   width: 100%;
 }
 
@@ -379,16 +481,18 @@ footer {
 .sobre {
   background-color: #f6f6f6;
   border-radius: 3px;
-  margin-left: 15%;
-  opacity: 0;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10vh;
   padding: 30px;
+  opacity: 0;
   text-align: justify;
-  transform: translateY(3.5vh);
+  transform: translateY(6.5vh);
   z-index: 1;
 }
 .sobre {
-  transition: transform 1.8s ease, opacity 1.8s ease;
-  transition-delay: 0.4s;
+  transition: transform 2s ease, opacity 1.8s ease;
+  transition-delay: 1s;
 }
 
 .sobre-transition {
@@ -399,7 +503,7 @@ footer {
 #constelacao {
   height: 10vw;
   margin-left: 77%;
-  margin-top: 2vw;
+  margin-top: 0vw;
   position: absolute;
   width: 10vw;
 }
@@ -426,10 +530,9 @@ footer {
 
 @media screen and (max-width: 1032px) {
   .sobre {
-    margin-left: 9%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 8%;
-    margin-right: 3%;
     padding: 15px;
   }
 

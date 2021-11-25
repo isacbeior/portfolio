@@ -47,7 +47,7 @@ input {
 /**fonts---------------------------------------------------------------------**/
 a {
   color: #101010;
-  font-family: "Courier Prime", monospace;
+  font-family: "Courier New", monospace;
   font-size: 2vw;
   font-weight: 400;
   text-align: center;
@@ -63,9 +63,9 @@ a:hover {
 
 h1 {
   color: #101010;
-  font-family: "Courier Prime", monospace;
+  font-family: "Courier New", monospace;
   font-size: 5vw;
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 1.7vw;
   margin-top: -4vw;
   padding-top: 6.3vw;
@@ -74,11 +74,11 @@ h1 {
 }
 
 h2 {
-  font-family: "Courier Prime", monospace;
+  font-family: "Courier New", monospace;
   text-decoration: none;
   color: #101010;
   font-size: 2vw;
-  font-weight: inherit;
+  font-weight: 600;
   text-align: inherit;
   line-height: 1.3;
   margin: 0;
@@ -89,7 +89,7 @@ h6 {
   background-color: #f6f6f6;
   border-radius: 3px 3px 0 0;
   color: gray;
-  font-family: "Courier Prime", monospace;
+  font-family: "Courier New", monospace;
   font-size: 1.2vw;
   font-weight: 1;
   margin-bottom: 0;
@@ -103,7 +103,7 @@ h6 {
 
 p {
   color: inherit;
-  font-family: "Courier Prime", monospace;
+  font-family: "Courier New", monospace;
   font-size: 1.5vw;
   font-weight: inherit;
   text-align: inherit;
@@ -169,10 +169,6 @@ p {
   opacity: 1;
 }
 
-.js-scroll.fadeOut.scrolled {
-  opacity: 0;
-}
-
 .deslizar-base {
   opacity: 0;
   transition: opacity 1300ms;
@@ -183,12 +179,6 @@ p {
   opacity: 1;
   animation: fade-in-bottom 1.3s;
   animation-delay: 400ms;
-}
-
-.js-scroll.fadeOut {
-  opacity: 1;
-  transition: opacity 450ms;
-  transition-delay: 0ms;
 }
 
 @keyframes fade-in-bottom {
@@ -209,9 +199,10 @@ p {
 /*header----------------------------------------------------------------------*/
 header, #background-container{
   margin: 0;
-  height: 45vh;
+  height: 95vh;
   width: 100%;
 }
+
 
 #background-container {
   position: absolute;
@@ -224,7 +215,7 @@ header, #background-container{
   background-position: 40% 0;
   height: 100%;
   width: 100vw;
-  z-index: 1;
+  z-index: 0;
 }
 @media screen and (max-width: 1032px) {
   #img-background {
@@ -247,10 +238,10 @@ button {
 }
 
 #nome {
-  margin-left: 36vw;
+  margin-left: 40vw;
   margin-top: -5vh;
   position: absolute;
-  width: 25vw;
+  width: 20vw;
   z-index: 2;
 }
 
@@ -263,6 +254,15 @@ button {
 }
 .nav-icon:hover {
   opacity: 0.75;
+}
+
+#instagram, #twitter, #youtube {
+  align-items: center;
+  vertical-align: middle;
+  filter: grayscale(100%);
+  height: auto;
+  margin: 1vh;
+  width: 0.8em;
 }
 
 @media screen and (max-width: 1032px) {
@@ -313,7 +313,7 @@ button {
 
 .dropdown {
   float: right;
-  margin-right: 15vw;
+  margin-right: 10vw;
   overflow: hidden;
   padding: 0;
   width: 3vw;
@@ -360,6 +360,15 @@ button {
     margin-top: 10vw;
   }
 }
+
+/*tittle-----------------------*/
+.tittle-container {
+  margin-top: 35vh;
+  position: absolute;
+  width: 100%;
+}
+
+
 /*end of header---------------------------------------------------------------*/
 
 
