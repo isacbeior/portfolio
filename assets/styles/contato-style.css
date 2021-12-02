@@ -404,6 +404,9 @@ button:hover {
   text-align: center;
   width: 80%;
 }
+.grid-item:hover {
+  opacity: 0.5;
+}
 /*end of section--------------------------------------------------------------*/
 
 
