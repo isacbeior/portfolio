@@ -60,7 +60,7 @@ h2 {
   color: #101010;
   font-family: 'Courier New', Courier;
   font-size: 1.8vw;
-  font-weight: 600;
+  font-weight: bold;
   line-height: 3vh;
   margin-bottom: 0;
   margin-top: 2vw;
@@ -117,7 +117,7 @@ a:hover {
   color: #10101085;
 }
 nav a {
-  text-decoration: underline;
+  text-decoration: 1px solid underline;
 }
 nav a:hover {
   background-color: #C8C8C8;
@@ -147,9 +147,11 @@ hr {
   width: 70%;
 }
 
+
 @media screen and (max-width: 1037px) {
   a {
-    font-size: 3vw;
+    font-size: 2.6vw;
+    line-height: 1.7;
   }
 
   p {
@@ -249,12 +251,12 @@ header, #background-container{
   border-width: 0 thin thin thin;
   margin-left: 25vw;
   margin-right: 25vw;
+  padding: 2vw;
   padding-top: 0vh;
   position: absolute;
   overflow-x: hidden;
   overflow-y: auto;
   max-height: 90vh;
-  width: 50vw;
   z-index: 1;
 }
 
@@ -293,11 +295,10 @@ nav {
 
 @media screen and (max-width: 1037px) {
   .container {
-    margin-left: 14vw;
-    margin-right: 14vw;
-    padding: 3vw;
+    margin-left: 13vw;
+    margin-right: 13vw;
+    padding: 0vw;
     padding-top: 0vh;
-    width: 65vw;
     z-index: 1;
   }
 
@@ -444,19 +445,19 @@ section a {
 
 @media screen and (max-width: 1032px) {
   .column {
-    -ms-flex: 35vw;
-    flex: 35vw;
-    width: 35vw;
+    -ms-flex: 38vw;
+    flex: 38vw;
+    width: 38vw;
   }
 
   section img {
-    width: 34vw;
+    width: 37.5vw;
   }
 
   .grid-item {
     height: auto;
     margin-bottom: 5vh;
-    width: 35vw;
+    width: 38vw;
   }
 
   #column-3 {
@@ -471,6 +472,10 @@ section a {
     z-index: 1;
   }
 
+  #column-3 {
+    margin-top: 0%;
+  }
+
   .grid-item {
     margin-bottom: 8vh;
   }
@@ -481,7 +486,6 @@ section a {
     margin: 0;
     width: 80vw;
   }
-
   section img {
     width: 80vw;
   }
@@ -601,9 +605,9 @@ footer {
 
 @media screen and (max-width: 600px) {
   .sobre {
-    margin-left: 5%;
+    margin-left: 8%;
     margin-top: 20%;
-    margin-right: 5%;
+    margin-right: 8%;
   }
   #btn {
     margin-top: 60vh;
