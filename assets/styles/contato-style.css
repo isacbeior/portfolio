@@ -1,8 +1,6 @@
 html,
 body {
-  background-image: url("../images/headers/ceu.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 100%;
   margin: 0;
   scroll-behavior: smooth;
   width: 100%;
@@ -49,12 +47,11 @@ input {
 /**fonts---------------------------------------------------------------------**/
 a {
   color: #101010;
-  font-family: "Courier Prime", monospace;
-  font-size: 2vw;
+  font-family: "Courier New", monospace;
+  font-size: 1.5vw;
   font-weight: 400;
   text-align: center;
   text-decoration: none;
-  vertical-align: middle;
   transition: 0.1s linear;
   -webkit-tap-highlight-color: #ffd2d150;
 }
@@ -65,9 +62,9 @@ a:hover {
 
 h1 {
   color: #101010;
-  font-family: "Courier Prime", monospace;
-  font-size: 5vw;
-  font-weight: 400;
+  font-family: "Courier New", monospace;
+  font-size: 3vw;
+  font-weight: 600;
   margin-bottom: 1.7vw;
   margin-top: -4vw;
   padding-top: 6.3vw;
@@ -76,11 +73,11 @@ h1 {
 }
 
 h2 {
-  font-family: "Courier Prime", monospace;
+  font-family: "Courier New", monospace;
   text-decoration: none;
   color: #101010;
-  font-size: 2vw;
-  font-weight: inherit;
+  font-size: 1.75vw;
+  font-weight: 600;
   text-align: inherit;
   line-height: 1.3;
   margin: 0;
@@ -91,7 +88,7 @@ h6 {
   background-color: #f6f6f6;
   border-radius: 3px 3px 0 0;
   color: gray;
-  font-family: "Courier Prime", monospace;
+  font-family: "Courier New", monospace;
   font-size: 1.2vw;
   font-weight: 1;
   margin-bottom: 0;
@@ -99,19 +96,21 @@ h6 {
   margin-right: auto;
   margin-top: 5vh;
   padding: 2vh;
-  line-height: 2vw;
+  line-height: 1.8vw;
   width: 30vw;
 }
 
 p {
   color: inherit;
-  font-family: "Courier Prime", monospace;
-  font-size: 1.5vw;
+  font-family: "Courier New", monospace;
+  font-size: 1.25rem;
   font-weight: inherit;
   text-align: inherit;
   text-decoration: none;
-  line-height: 1.3;
+  line-height: 2;
+  margin: 0.5vw;
 }
+
 
 @media screen and (max-width: 1037px) {
   a {
@@ -158,142 +157,133 @@ p {
 /**end of fonts--------------------------------------------------------------**/
 
 
-
-/*keyframes-------------------------------------------------------------------*/
-
-.js-scroll {
-  opacity: 0;
-  transition: opacity 1300ms;
-  transition-delay: 300ms;
-}
-
-.js-scroll.scrolled {
-  opacity: 1;
-}
-
-.js-scroll.fadeOut.scrolled {
-  opacity: 0;
-}
-
-.deslizar-base {
-  opacity: 0;
-  transition: opacity 1300ms;
-  transition-delay: 400ms;
-}
-
-.scrolled.deslizar-base {
-  opacity: 1;
-  animation: fade-in-bottom 1.3s;
-  animation-delay: 400ms;
-}
-
-.js-scroll.fadeOut {
-  opacity: 1;
-  transition: opacity 450ms;
-  transition-delay: 0ms;
-}
-
-@keyframes fade-in-bottom {
-  0% {
-    -webkit-transform: translateY(50px);
-    transform: translateY(50px);
-  }
-
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-/*end of keyframes------------------------------------------------------------*/
-
-
-
 /*header----------------------------------------------------------------------*/
-header, #background-container{
+header{
   margin: 0;
-  height: 25vh;
+  height: 100vh;
   width: 100%;
 }
 
+
 #background-container {
+  padding-top: 25vh;
   position: absolute;
   overflow: hidden;
+  width: 100%;
 }
 #img-background {
-  background-position: 0 20%;
+  background-attachment: fixed;
+  background-image: url("../images/headers/tecido-horizontal.jpg");
+  background-position: 20% 34%;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
+  height: 70vh;
   width: 100vw;
-  z-index: 1;
+  z-index: 0;
+}
+@media screen and (max-width: 1032px) {
+  #img-background {
+    background-position: 0 30%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #img-background {
+    background-attachment: scroll;
+    background-position: 0 25%;
+  }
 }
 /*navigation bar---------------------*/
 nav {
-  padding-top: 10vh;
+  padding-top: 12vh;
 }
 
 button {
   border: none;
   background-color: #ffffff00;
 }
+button:hover {
+  opacity: 0.6;
+}
 
 #nome {
-  margin-left: 40vw;
   margin-top: -3vh;
   position: absolute;
-  width: 18vw;
+  left: 50%;
+  transform: translate(-50%,0);
+  width: 20vw;
   z-index: 2;
 }
 
 .nav-icon {
+  border-color: #C8C8C8;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
   background-color: #ffffff00;
   margin: 0;
   padding: 0;
-  width: 3vw;
+  width: 2.3vw;
   transition: 0.15s linear;
 }
-.nav-icon:hover {
+.downwards {
+  background-color: #ffffff00;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 2vw;
+  transition: 0.15s linear;
+}
+.downwards:hover {
   opacity: 0.75;
 }
 
+#instagram, #twitter, #youtube {
+  align-items: center;
+  vertical-align: middle;
+  filter: grayscale(100%);
+  height: auto;
+  margin: 1vh;
+  width: 0.7em;
+}
+
 @media screen and (max-width: 1032px) {
-  .nav-icon {
-    width: 5vw;
-  }
   #nome {
-    margin-left: 30%;
-    width: 38%;
+    width: 35vw;
+  }
+  .nav-icon, .downwards {
+    width: 5vw;
   }
 }
 @media screen and (max-width: 600px) {
+  #nome {
+    width: 50vw;
+  }
+
   nav {
     padding-top: 13vh;
   }
-  .nav-icon {
+  .nav-icon, .downwards {
     width: 8.5vw;
-  }
-  #nome {
-    margin-left: 25%;
-    margin-top: -2vh;
-    width: 50%;
   }
 }
 /*back button----------*/
 #back {
   float: left;
-  margin-left: 10vw;
+  margin-left: 15vw;
   z-index: 2;
 }
 
 #back, #menu {
   position: absolute;
-  z-index: 2;
   transition: 0.15s linear;
+  z-index: 2;
 }
 
 #back:hover, #menu:hover {
-  background-color: #eeeeee;
-  border-radius: 3px;
+  background-color: #ffffff;
+  border-radius: 5px;
   cursor: pointer;
 }
 /*dropdown button------*/
@@ -304,20 +294,23 @@ button {
 
 .dropdown {
   float: right;
-  margin-right: 15vw;
   overflow: hidden;
+  margin-right: 15vw;
   padding: 0;
   width: 3vw;
   height: 3vw;
 }
 
 .dropdown-content {
-  background-color: #eeeeee;
-  border-radius: 3px;
-  box-shadow: 0px 8px 16px 0px #bbbbbb;
+  background-color: #ffffff;
+  border-color: #C8C8C8;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 5px;
   opacity: 0;
-  margin-top: 3.5vw;
-  margin-left: -11vw;
+  margin-top: 2.8vw;
+  margin-left: -9.3vw;
   padding: 2vw;
   position: absolute;
   text-align: center;
@@ -335,10 +328,11 @@ button {
   visibility: visible;
 }
 .dropdown:hover #menu {
-  background-color: #eeeeee;
-  border-radius: 3px;
+  background-color: #ffffff;
+  border-radius: 5px;
   cursor: pointer;
 }
+
 @media screen and (max-width: 1032px) {
   .dropdown-content {
     margin-left: -13.7vw;
@@ -346,9 +340,40 @@ button {
   }
 }
 @media screen and (max-width: 600px) {
+  #back {
+      margin-left: 7.5vw;
+  }
+
   .dropdown-content {
     margin-left: -25.4vw;
     margin-top: 10vw;
+  }
+}
+
+/*tittle-----------------------*/
+.tittle-container {
+  background-color: white;
+  border-radius: 5px;
+  border-color: #C8C8C8;
+  border-style: solid;
+  border-width: thin;
+  margin-top: 5.3vw;
+  margin-left: 30vw;
+  margin-right: 30vw;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 1032px) {
+  .tittle-container {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .tittle-container {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 /*end of header---------------------------------------------------------------*/
@@ -356,135 +381,29 @@ button {
 
 
 /*section---------------------------------------------------------------------*/
-section {
+.icon {
+  height: 2rem;
+  width: 2rem;
+}
+@media screen and (max-width: 600px) {
+  .icon {
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
+.grid-item {
   background-color: white;
-  border-radius: 3px;
+  border-radius: 10px;
+  border-color: #C8C8C8;
+  border-style: solid;
+  border-width: thin;
   margin: auto;
-  margin-top: 5vh;
+  margin-bottom: 5vh;
+  height: auto;
   text-align: center;
-  width: 95%;
+  width: 80%;
 }
-
-section img {
-  width: inherit;
-  height: inherit;
-}
-
-/*top button---------------*/
-#top-btn {
-  margin-left: 1.5vw;
-  margin-bottom: 1.5vw;
-  transition: 0.15s ease;
-  z-index: 99;
-}
-#top-btn:hover {
-  cursor: pointer;
-  opacity: 0.5
-}
-
-#top-btn p {
-  margin: 0;
-}
-#up {
-  width: 0.7em;
-}
-
-.copy {
-  width: 0.7em;
-}
-
-/*grid-------------------------------------------*/
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 50%);
-  grid-column-gap: 2vw;
-  grid-row-gap: 5vw;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 6vw;
-  padding-bottom: 0vh;
-  text-align: center;
-  width: 100%;
-  z-index: 1;
-}
-
-@media screen and (max-width: 600px) {
-  .grid-container {
-    grid-template-columns: repeat(auto-fill, 50%);
-    grid-column-gap: 0;
-    width: 100%;
-  }
-}
-
-/*grid items-----------------*/
-.item-1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 10;
-  position: relative;
-  width: 55vw;
-}
-.item-2 {
-  background-color: #f8f8f8;
-  border-radius: 3px;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  margin: auto;
-  padding: 2vw;
-  transition: all 0.15s ease;
-  width: 20vw;
-}
-.item-3 {
-  background-color: #f8f8f8;
-  border-radius: 3px;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  margin: auto;
-  padding: 2vw;
-  transition: all 0.15s ease;
-  width: 20vw;
-}
-.item-2:hover, .item-3:hover {
-  cursor: pointer;
-  opacity: 0.4;
-}
-
-@media screen and (max-width: 600px) {
-  .item-1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 57;
-    height: 100%;
-    width: 99%;
-  }
-  .item-2 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    margin: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    width: 40vw;
-  }
-  .item-3 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    margin: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    width: 40vw;
-  }
-}
-
 /*end of section--------------------------------------------------------------*/
 
 
