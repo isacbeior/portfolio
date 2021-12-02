@@ -30,10 +30,6 @@
     <meta name="twitter:description" content="amo desenhar estrelas, mas só sei encontrar Betelgeuse no céu" />
     <meta name="twitter:image" content="https://isacbeior.github.io/portfolio/thumbnail.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Open+Sans&display=swap" rel="stylesheet" />
-
     <script src="..\assets\scripts\right-click.js"></script>
   </head>
 
@@ -42,7 +38,10 @@
 
     <!-- header -->
     <header id="head">
-      <div id="background-container"><div id="img-background"></div></div>
+      <div id="background-container">
+        <div id="img-background">
+        </div>
+      </div>
       <script src="..\assets\scripts\background-fadeIn.js"></script>
 
       <!-- navigation bar -->
@@ -66,43 +65,43 @@
             <div class="dropdown-content">
               <a href="..\index.html">portfólio</a><br>
               <a href="sobre.html">sobre</a><br>
-              <a href="contato.html">contato</a><br>
+              <a href="..\index.html#contato">contato</a><br>
               <a target="_blank" href="https://www.colab55.com/@isacbeior?aff=r2k5k2">loja</a><br>
               <a title="página do instagram" target="_blank" href="https://www.instagram.com/ocasodaaurora/">
-                <img alt="ícone instagram" id="instagram" src="..\assets\images\icons\instagram.svg"/>
-              </a>
+                <img alt="instagram logo" id="instagram" src="..\assets\images\icons\instagram.svg"></a>
+              <a title="página do twitter" target="_blank" href="https://twitter.com/ocasodaaurora">
+                <img alt="twitter logo" id="twitter" src="..\assets\images\icons\twitter.svg"></a>
+              <a title="canal no YouTube" target="_blank" href="https://www.youtube.com/channel/UCmaSSNnpe5zOqGQV2K4Ae6g">
+                <img alt="youtube logo" id="youtube" src="..\assets\images\icons\youtube-icon.svg"></a>
+
             </div>
         </div>
       </nav>
 
+      <div class="tittle-container">
+          <h1>contato<p>qualquer coisa, mande uma mensagem ou um email, que ficarei feliz em ajudar!</p></h1><br>
+
+          <a title="contato WhatsApp" target="_blank" href="https://api.whatsapp.com/send?phone=5551984607058">
+            <div class="grid-item item-1">
+              <p>WhatsApp
+                <img class="icon" alt="whatsapp icon" src="..\assets\images\icons\whatsapp.svg">
+              </p>
+            </div>
+          </a>
+
+          <a onclick="Function()" href = "mailto: isacbeior@gmail.com" title="copiar email">
+            <div class="grid-item item-2">
+              <p>email
+                <img class="icon" alt="ícone de email" src="..\assets\images\icons\email.svg">
+              </p>
+            </div>
+          </a>
+
+          <input type="text" title="email" id="input" value="isacbeior@gmail.com" alt="email" placeholder="&nbsp">
+          <script src="..\assets\scripts\email.js"></script>
+      </div>
+
     </header>
-
-    <section id="contato">
-      <h1>contato</h1>
-      <p>qualquer coisa, manda um email ou uma mensagem!</p>
-
-      <div class="grid-container">
-      <div class="grid-item item-1">
-        <iframe title="formulário" src="https://docs.google.com/forms/d/e/1FAIpQLSdQygslfxKCenrSjKUWSwugi2AuoYji3WX6bmbmjVgWIhsN9Q/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" scrolling="yes">Carregando…</iframe>
-        <br>
-      </div>
-
-        <a class="grid-item deslizar-base item-2" title="contato WhatsApp" target="_blank" href="https://api.whatsapp.com/send?phone=5551984607058">
-          <img class="nav-icon" alt="whatsapp icon" src="..\assets\images\icons\whatsapp.svg"><br><br>
-        </a>
-
-        <a class="grid-item deslizar-base item-3" onclick="Function()" href = "mailto: isacbeior@gmail.com" title="copiar email">
-          <img class="nav-icon" alt="ícone de email" src="..\assets\images\icons\email.svg"><br>
-          <img alt="ícone copiar" class="copy" src="..\assets\images\icons\copy.svg">
-        </a>
-      </div>
-
-
-      <input type="text" title="email" id="input" value="isacbeior@gmail.com" alt="email" placeholder="&nbsp">
-      <script src="..\assets\scripts\email.js"></script>
-      <script src="..\assets\scripts\fadeIn-grid.js"></script>
-    </section>
-
 
     <!-- footer -->
     <footer>

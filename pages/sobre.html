@@ -29,9 +29,6 @@
     <meta name="twitter:title" content="Isac Beior Ilustrador" />
     <meta name="twitter:description" content="amo desenhar estrelas, mas só sei encontrar Betelgeuse no céu" />
     <meta name="twitter:image" content="https://isacbeior.github.io/portfolio/thumbnail.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Open+Sans&display=swap" rel="stylesheet" />
 
     <script src="..\assets\scripts\right-click.js"></script>
   </head>
@@ -41,7 +38,12 @@
 
     <!-- header -->
     <header id="head">
-      <div id="background-container"><div id="img-background"></div></div>
+      <script src="assets\scripts\background-fadeIn.js"></script>
+
+      <div id="background-container">
+        <div id="img-background">
+        </div>
+      </div>
       <script src="..\assets\scripts\background-fadeIn.js"></script>
 
       <!-- navigation bar -->
@@ -68,75 +70,73 @@
               <a href="contato.html">contato</a><br>
               <a target="_blank" href="https://www.colab55.com/@isacbeior?aff=r2k5k2">loja</a><br>
               <a title="página do instagram" target="_blank" href="https://www.instagram.com/ocasodaaurora/">
-                <img alt="ícone instagram" id="instagram" src="..\assets\images\icons\instagram.svg"/>
-              </a>
+                <img alt="instagram logo" id="instagram" src="..\assets\images\icons\instagram.svg"></a>
+              <a title="página do twitter" target="_blank" href="https://twitter.com/ocasodaaurora">
+                <img alt="twitter logo" id="twitter" src="..\assets\images\icons\twitter.svg"></a>
+              <a title="canal no YouTube" target="_blank" href="https://www.youtube.com/channel/UCmaSSNnpe5zOqGQV2K4Ae6g">
+                <img alt="youtube logo" id="youtube" src="..\assets\images\icons\youtube-icon.svg"></a>
+
             </div>
         </div>
       </nav>
 
+      <div class="tittle-container">
+          <h1>sobre</h1><br><br><br>
+          <a href="#1">
+              <img class="downwards" alt="ícone seta para baixo" src="..\assets\images\icons\arrow-downwards.svg">
+          </a>
+      </div>
     </header>
 
     <!-- section -->
     <section>
-      <h1>sobre</h1><br><br><br><br>
-      <a href="#1">
-        <div class="grid-item js-scroll fadeOut">
-          <img class="nav-icon" alt="ícone seta para baixo" src="..\assets\images\icons\arrow-downwards.svg">
-        </div>
-      </a>
-
       <div id="1" class="grid-container">
-        <div class="grid-item js-scroll item-1"><img alt="foto" id="foto" src="..\assets\images\polaroid-isac.jpg"></div>
-        <div class="grid-item deslizar-base item-0">
-          <p>Isac Beior é um artista visual em formação. Hodiernamente, trabalha no desenvolvimento de "<em>O Penhasco Cor-de-Rosa</em>",
-          uma história que permeia a literatura e as artes visuais.</p>
-          <p>Além disso, estuda para ingressar no curso de Animação da Universidade Federal de Santa Catarina.</p>
+        <div class="grid-item js-scroll item-1">
+          <img alt="foto" id="foto" src="..\assets\images\polaroid.jpg">
         </div>
         <div class="grid-item deslizar-base item-2">
-          <p>Isac Beior é um artista visual em formação, que atualmente trabalha no desenvolvimento de "<em>O Penhasco Cor-de-Rosa</em>",
-          uma história que permeia a literatura e as artes visuais.</p>
-        </div>
-        <div class="grid-item deslizar-base item-5">
-          <p>Além disso, estuda para ingressar no curso de Animação da Universidade Federal de Santa Catarina.</p>
+          <p><b>Isac Beior é um ilustrador inspirado pelo movimento das estrelas e dos tecidos.</b>
+          Por meio do papel ou da tela digital anseia desenhar aquilo que não se vê, e fazer
+          da arte um veículo que transmite não apenas sensações, mas também um impulso que
+          desperte os sentimentos.</p>
+          <p><b>Como ilustrador, utiliza técnicas 2D e 3D</b> para substancializar conceitos
+          que originam personagens e cenários. Dentre elas, destacam-se <b>aquarela, desenho digital e
+          modelagem 3D</b>.</p>
+          <p>Hodiernamente, trabalha no projeto "<b>O Penhasco Cor-de-Rosa</b>", uma história que permeia
+          a literatura e as artes visuais. Além disso, estuda para ingressar no curso de
+          animação da Universidade Federal de Santa Catarina.</p>
         </div>
         <div class="grid-item deslizar-base item-3">
-          <h2><u>técnicas</u></h2>
+          <h2>Técnicas:</h2>
           <ul>
-            digital:<br><br>
-                     <li>• Adobe Illustrador (ilustrações vetoriais);</li><br>
-                     <li>• Blender e SketchUp (modelagem 3D e animações);</li><br>
-                     <li>• HTML&CSS (desenvolvimento de websites).</li><br><br>
-
-            tradicional:<br><br>
-                    <li>• aquarela e lápis aquerelável</li>
+            <u>Digital</u>
+              <li>Adobe Illustrador (ilustrações vetoriais);</li>
+              <li>Adobe Photoshop (ilustração);</li>
+              <li>Blender e SketchUp (modelagem 3D e animações);</li>
+              <li>HTML&CSS (desenvolvimento de websites).</li><br>
+            <u>Tradicional</u>
+              <li>aquarela e lápis aquerelável.</li>
           </ul>
         </div>
         <div class="grid-item deslizar-base item-4">
-          <h2><u>experiência</u></h2>
+          <h2>Experiência</h2>
           <ul>
-            <p><em>Cliff Idiomas / desenvolvimento visual e pintura</em>
+              <p><em>Cliff Idiomas / desenvolvimento visual e pintura</em>
               <br>Estância Velha, Rio Grande do sul<br>2020</p>
             <ul>
-              <li>• desenvolvimento de conceito e layout para um mural</li>
-              <li>• pintura feita com giz em parede de lousa</li>
+              <li>desenvolvimento de conceito e layout para um mural;</li>
+              <li>pintura feita com giz em parede de lousa.</li>
             </ul>
           </ul>
+          <!-- mural -->
+          <button type="button" class="collapsible"><p>visualizar arte</p></button>
+            <div class="content">
+                <img id="painel" src="..\assets\images\les_dessins\painel.jpg" alt="mural">
+            </div>
 
         </div>
 
-        <div class="img-zoom-container grid-item js-scroll item-6">
-          <img alt="ícone de zoom" src="..\assets\images\icons\zoom.svg">
-          <img id="zoomed-img" alt="painel" class="painel" src="..\assets\images\les_dessins\painel.jpg">
-        </div>
-        <div class="grid-item js-scroll item-7">
-          <div id="result" class="img-zoom-result"></div>
-        </div>
-
-        <script src="..\assets\scripts\zoom.js"></script>
-        <script>
-          imageZoom("zoomed-img", "result");
-        </script>
-
+        <script src="..\assets\scripts\colapse-button.js"></script>
         <script src="..\assets\scripts\fadeIn-grid.js"></script>
     </section>
 
