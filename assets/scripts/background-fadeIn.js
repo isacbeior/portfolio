@@ -12,7 +12,7 @@ function fadeOutOnScroll(element) {
   var opacity = 1;
 
   if (scrollTop > distanceToTop) {
-    opacity = 0.9 - (scrollTop - distanceToTop) / elementHeight;
+    opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
   }
 
   if (opacity >= 0) {

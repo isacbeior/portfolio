@@ -7,4 +7,7 @@ function Function1() {
   document.execCommand("copy");
 
   alert("telefone copiado: " + copyText.value);
+
+  window.open("https://api.whatsapp.com/send?phone=5551984607058", '_blank');
+
 }
