@@ -105,10 +105,10 @@ a {
   color: #101010;
   cursor: pointer !important;
   font-family: "Courier New", Courier, monospace;
-  font-size: 1.3vw;
+  font-size: 1.3rem;
   font-weight: 500;
   margin: 0vw 1vw 0vw 1vw;
-  padding: 0.45vw;
+  padding: 0.3vw;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -121,7 +121,6 @@ a:hover {
 }
 nav a {
   font-weight: bold;
-  text-decoration: 1px solid underline;
 }
 nav a:hover {
   background-color: #C8C8C8;
