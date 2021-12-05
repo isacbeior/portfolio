@@ -224,6 +224,7 @@ header, #background-container{
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
   background-attachment: fixed;
+  background-color: #ffffff00;
   background-image: url("../images/headers/estrelas1.png");
   background-size: cover;
   background-position: center;
@@ -279,6 +280,7 @@ nav {
 }
 
 #logo {
+  animation: fadeInAnimation ease 1s;
   filter: brightness(1.2) saturate(1.25);
   margin-bottom: 0vh;
   margin-left: -55%;
