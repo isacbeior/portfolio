@@ -220,7 +220,7 @@ header, #background-container{
   overflow: hidden;
 }
 #img-background {
-  animation: fadeInAnimation ease 5s;
+  animation: fadeInAnimation ease 3s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
   background-attachment: fixed;
@@ -285,6 +285,7 @@ nav {
   margin-bottom: 0vh;
   margin-left: -55%;
   transform: translate(0%, 5%);
+  height: 25vw;
   width: 25vw;
 }
 
@@ -330,6 +331,7 @@ nav {
     margin-left: 50%;
     margin-top: 0vh;
     transform: translate(-84%, 5vh);
+    height: 43vw;
     width: 43vw;
   }
 }
@@ -374,6 +376,7 @@ nav {
     margin-left: 50%;
     margin-top: 0vh;
     transform: translate(-50%, 3vh);
+    height: 90vw;
     width: 90vw;
   }
 }

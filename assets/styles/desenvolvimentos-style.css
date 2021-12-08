@@ -361,7 +361,7 @@ button:hover {
 
 @media screen and (max-width: 1032px) {
   .dropdown-content {
-    margin-left: -13.7vw;
+    margin-left: -16.5vw;
     margin-top: 5.8vw;
   }
 }
@@ -371,7 +371,7 @@ button:hover {
   }
 
   .dropdown-content {
-    margin-left: -25.4vw;
+    margin-left: -30vw;
     margin-top: 10vw;
   }
 }
