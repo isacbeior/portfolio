@@ -247,7 +247,7 @@ header, #background-container{
 /*navigation bar -------------*/
 .container {
   background-color: white;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0px 0px 5px 5px;
   border-color: #C8C8C8;
   border-style: solid;
   border-width: 0 ;
@@ -538,7 +538,7 @@ footer {
 
 .sobre {
   background-color: white;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 5px 5px;
   margin-left: 25%;
   margin-right: 25%;
   margin-top: 10vh;
