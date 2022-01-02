@@ -61,18 +61,18 @@
           <button title="menu" id="menu" class="dropbtn">
             <img alt="ícone menu" class="nav-icon" src="..\assets\images\icons\menu.svg">
           </button>
-            <div class="dropdown-content">
-              <a href="..\index.html">portfólio</a><br>
-              <a href="sobre.html">sobre</a><br>
-              <a href="contato.html">contato</a><br>
-              <a target="_blank" href="https://www.colab55.com/@isacbeior?aff=r2k5k2">loja</a><br>
-              <a href="encomendas.html">encomendar</a><br>              
-              <a title="página do instagram" target="_blank" href="https://www.instagram.com/ocasodaaurora/">
-                <img alt="instagram logo" id="instagram" src="..\assets\images\icons\instagram.svg"></a>
-                <a title="página do twitter" target="_blank" href="https://twitter.com/ocasodaaurora">
-                  <img alt="twitter logo" id="twitter" src="..\assets\images\icons\twitter.svg"></a>
-              <a title="canal no YouTube" target="_blank" href="https://www.youtube.com/channel/UCmaSSNnpe5zOqGQV2K4Ae6g">
-                <img alt="youtube logo" id="youtube" src="..\assets\images\icons\youtube-icon.svg"></a>
+          <div class="dropdown-content">
+            <a href="..\index.html">portfólio</a><br>
+            <a href="sobre.html">sobre</a><br>
+            <a href="contato.html">contato</a><br>
+            <a href="encomendas.html">encomendar</a><br>
+            <a target="_blank" href="https://www.colab55.com/@isacbeior?aff=r2k5k2">loja</a><br>
+            <a title="página do instagram" target="_blank" href="https://www.instagram.com/isacbeiorarte/">
+              <img alt="instagram logo" id="instagram" src="..\assets\images\icons\instagram.svg"></a>
+            <a title="página do twitter" target="_blank" href="https://twitter.com/isacbeiorarte">
+              <img alt="twitter logo" id="twitter" src="..\assets\images\icons\twitter.svg"></a>
+            <a title="canal no YouTube" target="_blank" href="https://www.youtube.com/channel/UCmaSSNnpe5zOqGQV2K4Ae6g">
+              <img alt="youtube logo" id="youtube" src="..\assets\images\icons\youtube-icon.svg"></a>
 
             </div>
         </div>
@@ -94,19 +94,27 @@
         <!-- grid items -->
         <div class="item-1-background"></div>
 
-        <div class="grid-item js-scroll item-1">
+        <div class="item-1">
+          <div class="grid-item deslizar-base">
+            <h2>situação: <b>encomendas abertas!</b></h2><br><br><hr><br><br>
 
-          <h2>situação: <b>encomendas abertas!</b></h2><br><br><hr><br><br>
+            <p><b>Ilustrações que faço:</b></p>
+            <p class="left-align">
+              <a href="#retratos-pessoas">• Retratos de pessoas;</a><br>
+              <a href="#retratos-personagens">• Retratos de personagens ou celebridades;</a><br>
+              <a href="#convites">• Convites / Cardápios (aniversários, casamentos, festas);</a><br>
+              <a href="#retratos-animais">• Retratos de animais de estimação;</a><br>
+              <a href="#paisagens">• Paisagens.</a><br><br>
+              <sub>(clique no tópico para ir direto à seção desejada)</sub>
+            </p>
+        </div>
+        <br>
+          <div class="grid-item deslizar-base email">
+            <a onclick="Function()" href = "mailto: isacbeior@gmail.com" title="copiar email">
+                <p>email<img class="icon" alt="ícone de email" src="..\assets\images\icons\email.svg"></p>
+            </a>
+          </div>
 
-          <p><b>Ilustrações que faço:</b></p>
-          <p class="left-align">
-            <a href="#retratos-pessoas">• Retratos de pessoas;</a><br>
-            <a href="#retratos-personagens">• Retratos de personagens ou celebridades;</a><br>
-            <a href="#convites">• Convites / Cardápios (aniversários, casamentos, festas);</a><br>
-            <a href="#retratos-animais">• Retratos de animais de estimação;</a><br>
-            <a href="#paisagens">• Paisagens.</a><br><br>
-            <sub>(clique no tópico para ir direto à seção desejada)</sub>
-          </p>
         </div>
 
         <div class="grid-item deslizar-base item-2">
@@ -126,10 +134,13 @@
           </p>
         </div>
 
+        <input type="text" title="email" id="input" value="isacbeior@gmail.com" alt="email" placeholder="&nbsp">
+        <script src="..\assets\scripts\email.js"></script>
+
         <div id="retratos-pessoas" class="grid-item js-scroll item-3">
           <h2><b>Retratos de Pessoas</b></h2>
           <p class="justify-align">Individuais, casais ou famílias. Use como quadro, cartão ou presenteie alguém!</p><hr><br><br>
-          <img class="grid-item js-scroll" alt="o nascimento de Apolo" src="..\assets\images\les_dessins\o-nascimento-de-apolo.jpg">
+          <img class="grid-item js-scroll" alt="o nascimento de Apolo" src="..\assets\images\les-dessins\o-nascimento-de-apolo.jpg">
           <p>Exemplo de retrato com fundo complexo.</p><hr><br>
         </div>
 
@@ -152,7 +163,7 @@
           </p>
         </div>
 
-        <div class="grid-item deslizar-base item-5">
+        <div class="item-5">
           <p class="grid-item deslizar-base justify-align">
             <b>O que preciso enviar-te?</b><br>
             <b>1. </b>Várias fotos das pessoas que serão desenhadas. Ao menos uma próxima ao rosto e outra de corpo inteiro. Também escreva uma descrição com informações que você considere relevantes (cor dos olhos e personalidade, por exemplo);<br><br>
@@ -160,7 +171,7 @@
             <b>3. </b>Caso necessário, imagens do lugar desejado para o fundo.
           </p><br>
         </div>
-        <div class="grid-item deslizar-base item-6">
+        <div class="item-6">
           <p class="grid-item deslizar-base justify-align">
             <b>Qual é a média de tempo até ficar pronto?</b><br>
             Por volta de 1 ou 2 semanas, pode variar conforme a complexidade.<br><br>
@@ -179,7 +190,7 @@
         <div id="retratos-personagens" class="grid-item js-scroll item-7">
           <h2><b>Retratos de personagens ou celebridades</b></h2>
           <p class="justify-align">Use como quadro ou dê de presente!</p><hr><br><br>
-          <img class="grid-item js-scroll" alt="o nascimento de Apolo" src="..\assets\images\les_dessins\gaga-cover.jpg">
+          <img class="grid-item js-scroll" alt="o nascimento de Apolo" src="..\assets\images\les-dessins\gaga-cover.jpg">
           <p>Exemplo de retrato (cantora Lady Gaga).</p><hr><br>
         </div>
 
@@ -202,13 +213,13 @@
           </p>
         </div>
 
-        <div class="grid-item deslizar-base item-9">
+        <div class="item-9">
           <p class="grid-item deslizar-base justify-align">
             <b>O que preciso enviar-te?</b><br>
             Referências do personagem. Elas podem ser feitas descrevendo o físico e o psicológico, um esboço ou fotos que você tenha. Quanto mais informações, melhor!
           </p><br>
         </div>
-        <div class="grid-item deslizar-base item-10">
+        <div class="item-10">
           <p class="grid-item deslizar-base justify-align">
             <b>Qual é a média de tempo até ficar pronto?</b><br>
             Por volta de 1 ou 2 semanas, pode variar conforme a complexidade.<br><br>
@@ -255,7 +266,7 @@
           </p>
         </div>
 
-        <div class="grid-item deslizar-base item-13">
+        <div class="item-13">
           <p class="grid-item deslizar-base justify-align">
             <b>O que preciso enviar-te?</b><br>
             <b>1. </b>Várias fotos das pessoas que serão desenhadas. Ao menos uma próxima ao rosto e outra de corpo inteiro. Também escreva uma descrição com informações que você considere relevantes (cor dos olhos e personalidade, por exemplo);<br><br>
@@ -264,7 +275,7 @@
             <b>4. </b>Se houver, as cores do casamento e as flores utilizadas.
           </p><br>
         </div>
-        <div class="grid-item deslizar-base item-14">
+        <div class="item-14">
           <p class="grid-item deslizar-base justify-align">
             <b>Qual é a média de tempo até ficar pronto?</b><br>
             Por volta de 1 ou 2 semanas, pode variar conforme a complexidade.<br><br>
@@ -301,7 +312,7 @@
           </p>
         </div>
 
-        <div class="grid-item deslizar-base item-17">
+        <div class="item-17">
           <p class="grid-item deslizar-base justify-align">
             <b>O que preciso enviar-te?</b><br>
             <b>1. </b>Fotos do bichinho: de perto e de corpo todo. Apenas o necessário para eu saber como ele é fisicamente.<br><br>
@@ -309,7 +320,7 @@
             <b>3. </b>Caso desejado, informar quais flores ou qual o padrão para o fundo do desenho.
           </p><br>
         </div>
-        <div class="grid-item deslizar-base item-18">
+        <div class="item-18">
           <p class="grid-item deslizar-base justify-align">
             <b>Qual é a média de tempo até ficar pronto?</b><br>
             Por volta de 1 ou 2 semanas, pode variar conforme a complexidade.<br><br>
@@ -329,7 +340,7 @@
         <div id="paisagens" class="grid-item js-scroll item-19">
           <h2><b>Paisagens</b></h2>
           <p class="justify-align">Uma janela no papel!</p><hr><br><br>
-          <img class="grid-item js-scroll" alt="o nascimento de Apolo" src="..\assets\images\les_dessins\hogwarts.jpg">
+          <img class="grid-item js-scroll" alt="o nascimento de Apolo" src="..\assets\images\les-dessins\hogwarts.jpg">
           <p>Exemplo de paisagem (Escola de Magia e Bruxaria de Hogwarts).</p><hr><br>
         </div>
 
@@ -348,13 +359,13 @@
           </p>
         </div>
 
-        <div class="grid-item deslizar-base item-21">
+        <div class="item-21">
           <p class="grid-item deslizar-base justify-align">
             <b>O que preciso enviar-te?</b><br>
             Várias fotos do lugar. Também escreva uma descrição com informações que você considere relevantes (o que você sente quando visita esse lugar, quais as sensações que ele passa, por exemplo).<br><br>
           </p><br>
         </div>
-        <div class="grid-item deslizar-base item-22">
+        <div class="item-22">
           <p class="grid-item deslizar-base justify-align">
             <b>Qual é a média de tempo até ficar pronto?</b><br>
             Por volta de 1 ou 2 semanas, pode variar conforme a complexidade.<br><br>
