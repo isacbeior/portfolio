@@ -448,9 +448,11 @@ section img {
 
 .grid-item video {
   border-radius: 8px;
+  width: 80vw;
 }
 .grid-item iframe {
   border-radius: 5px;
+  width: 80vw;
   height: 80vh;
 }
 
