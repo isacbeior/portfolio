@@ -101,7 +101,7 @@ h6 {
   width: 30vw;
 }
 
-p, li {
+p, li, .collapsible a  {
   color: inherit;
   font-family: "Courier New", monospace;
   font-size: 1rem;
@@ -120,11 +120,12 @@ ul {
   font-family: "Courier New", monospace;
   font-size: 1.2rem;
   font-weight: inherit;
-  text-align: inherit;
+  text-align: justify;
   text-decoration: none;
   line-height: 2;
   margin: 0.5vw;
 }
+
 
 @media screen and (max-width: 1037px) {
   a {
@@ -487,6 +488,7 @@ section img {
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
+  margin-left: 5vw;
 }
 
 
@@ -510,8 +512,8 @@ section img {
   display: none;
 }
 
-#painel {
-  width: 40vw;
+.painel {
+  width: 20vw;
 }
 
 @media screen and (max-width: 1032px) {
@@ -541,6 +543,10 @@ section img {
     margin-right: auto;
     margin-top: 6vw;
     z-index: 1;
+  }
+
+  .painel {
+    width: 90vw;
   }
 
   .item-1 {
