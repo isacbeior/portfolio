@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="..\assets\styles\o-balanco-style.css" />
+
+    <link rel="shortcut icon" href="..\assets\images\favicon.png" />
+    <title>𝙸𝚜𝚊𝚌 𝙱𝚎𝚒𝚘𝚛 | 𝚁𝚎𝚝𝚛𝚊𝚝𝚘𝚜</title>
+
+    <meta property="og:title" content="Isac Beior Ilustrador" />
+    <meta name="keywords" content="ilustração, aquarela, animação, modelagem 3d, portfolio" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta property="og:url" content="https://isacbeior.github.io/portfolio/" />
+    <meta property="og:description" content="amo desenhar estrelas, mas só sei encontrar Betelgeuse no céu" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://isacbeior.github.io/portfolio/thumbnail.png" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="600">
+    <meta name="author" content="Isac Ribeiro" />
+    <meta name="thumbnail" content="https://isacbeior.github.io/portfolio/thumbnail.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="isacbeior.github.io" />
+    <meta property="twitter:url" content="https://isacbeior.github.io/portfolio/" />
+    <meta name="twitter:title" content="Isac Beior Ilustrador" />
+    <meta name="twitter:description" content="amo desenhar estrelas, mas só sei encontrar Betelgeuse no céu" />
+    <meta name="twitter:image" content="https://isacbeior.github.io/portfolio/thumbnail.png" />
+
+    <script src="..\assets\scripts\right-click.js"></script>
+  </head>
+
+  <body>
+    <img alt="thumbnail" id="thumbnail" src="..\thumbnail.png">
+
+    <!-- header -->
+    <header id="head">
+      <div id="background-container">
+        <div id="img-background">
+        </div>
+      </div>
+
+      <!-- navigation bar -->
+      <nav>
+        <!-- back button -->
+        <button title="voltar" onclick="goBack()" id="back">
+          <img alt="ícone voltar" class="nav-icon" src="..\assets\images\icons\arrow-back.svg">
+        </button>
+        <script>
+          function goBack() {
+            window.history.back();
+          }
+        </script>
+        <!-- logo -->
+        <img alt="nome" id="nome" src="..\assets\images\nome.svg">
+        <!-- dropdown menu -->
+        <div class="dropdown">
+          <button title="menu" id="menu" class="dropbtn">
+            <img alt="ícone menu" class="nav-icon" src="..\assets\images\icons\menu.svg">
+          </button>
+          <div class="dropdown-content">
+            <a href="..\index.html">portfólio</a><br>
+            <a href="sobre.html">sobre</a><br>
+            <a href="contato.html">contato</a><br>
+            <a href="encomendas.html">encomendar</a><br>
+            <a target="_blank" href="https://www.colab55.com/@isacbeior?aff=r2k5k2">loja</a><br>
+            <a title="página do instagram" target="_blank" href="https://www.instagram.com/isacbeiorarte/">
+              <img alt="instagram logo" id="instagram" src="..\assets\images\icons\instagram.svg"></a>
+            <a title="página do twitter" target="_blank" href="https://twitter.com/isacbeiorarte">
+              <img alt="twitter logo" id="twitter" src="..\assets\images\icons\twitter.svg"></a>
+            <a title="canal no YouTube" target="_blank" href="https://www.youtube.com/channel/UCmaSSNnpe5zOqGQV2K4Ae6g">
+              <img alt="youtube logo" id="youtube" src="..\assets\images\icons\youtube-icon.svg"></a>
+
+            </div>
+        </div>
+      </nav>
+
+      <div class="tittle-container">
+          <h1>o balanço<p>releitura</p></h1><br><br><br>
+          <a href="#1">
+              <img class="downwards" alt="ícone seta para baixo" src="..\assets\images\icons\arrow-downwards.svg">
+          </a>
+      </div>
+    </header>
+
+    <!-- section -->
+    <section>
+      <!-- grid -->
+      <div class="grid-container" id="1">
+
+        <!-- grid items -->
+        <div class="grid-item js-scroll item-1">
+          <img alt="o balanço" src="..\assets\images\3d-modeling\o-balanco.jpg">
+        </div>
+        <div class="grid-item deslizar-base item-2">
+          <h2>o balanço<br></h2>
+          <p>releitura da obra de Jean-Honoré Fragonard</p>
+          <p>modelagem 3D feita no Blender</p>
+        </div>
+
+
+        <script src="..\assets\scripts\fadeIn-grid.js"></script>
+      </div>
+
+      <!-- top button -->
+      <button onclick="topFunction()" id="top-btn" title="voltar para o topo">
+        <p>voltar para o topo&nbsp;<img id="up" alt="ícone seta para cima" src="..\assets\images\icons\arrow-upward.svg"></p>
+        <script src="..\assets\scripts\top-function.js"></script>
+      </button>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div id="box"></div>
+      <div id="autor">
+        <h6>
+          ilustrações, músicas e animações autorais<br>
+          Isac Ribeiro, 2021.
+        </h6>
+      </div>
+    </footer>
+
+  </body>
+</html>
